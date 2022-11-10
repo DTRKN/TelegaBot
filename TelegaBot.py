@@ -12,6 +12,7 @@ def start(message):
 def get_user_photo(message):
     bot.send_message(message.chat.id, 'Классное фото)')
 
+# Отправляет ссылку на Youtube
 @bot.message_handler(commands=['website'])
 def website(message):
     markup = types.InlineKeyboardMarkup()
